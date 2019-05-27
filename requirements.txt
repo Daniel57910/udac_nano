@@ -1,4 +1,4 @@
 psycopg2
 pep8
-cql
-cassandra-driver
+cqlsh
+cassandra-driver >= 3.17.1
