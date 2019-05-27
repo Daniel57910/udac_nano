@@ -1,0 +1,4 @@
+cassandra
+postgresql
+python3
+virtualenv
