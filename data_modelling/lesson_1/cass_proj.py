@@ -52,9 +52,6 @@ def exec_query(session, query):
 		
 def main():
 
-	core_keyspace = "CREATE KEYSPACE udac_data_eng_cass	WITH REPLICATION = " 
-	keyspace_config = "{ 'class': 'SimpleStrategy', 'replication_factor':  1 }"
-
 	cluster = Cluster(['127.0.0.1'])
 	session = cluster.connect()
 	create_database(session)
