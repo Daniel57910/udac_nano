@@ -24,3 +24,10 @@ CREATE TABLE IF NOT EXISTS tTransaction(
 	album_id INTEGER references tAlbum(album_id),
 	PRIMARY KEY(transaction_id)
 );
+
+-- indexes
+
+CREATE INDEX tCust_cust_name_idx on tCust (cust_name);
+CREATE INDEX tEmployee_employee_name_idx on tEmployee(employee_name);
+CREATE INDEX tAlbum_album_name_idx on tAlbum (album_name);
+CREATE INDEX tTransaction_year_idx on tTransaction (transaction_year);

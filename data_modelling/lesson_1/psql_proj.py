@@ -1,5 +1,5 @@
 import psycopg2
-
+ 
 def main():
 
 	conn = psycopg2.connect('dbname=udacdataeng user=danielwork')
